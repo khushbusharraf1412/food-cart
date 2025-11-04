@@ -3,107 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up | Food Cart</title>
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #ff9966, #ff5e62);
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-image:url("https://png.pngtree.com/background/20230625/original/pngtree-d-renderings-of-popular-mobile-food-vendors-hot-dog-cart-burger-picture-image_4051472.jpg");
-      background-size:cover;
-      background-repeat:no-repeat;
-      background-position:center;
-    }
-
-    .container {
-      background-color: rgb(230, 222, 222);
-      border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-      width: 350px;
-      padding: 30px;
-      text-align: center;
-      
-    }
-
-    h2 {
-      color: #ff6347;
-      margin-bottom: 20px;
-    }
-
-    input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
-      outline: none;
-      transition: border 0.3s;
-    }
-
-    input:focus {
-      border-color: #ff6347;
-    }
-
-    button {
-      width: 100%;
-      padding: 10px;
-      background-color: #ff6347;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-      margin-top: 10px;
-      transition: background 0.3s;
-    }
-
-    button:hover {
-      background-color: #e5533d;
-    }
-
-    p {
-      margin-top: 15px;
-      font-size: 0.9rem;
-    }
-
-    a {
-      color: #ff6347;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 15px;
-      color: white;
-      font-size: 0.85rem;
-    }
-  </style>
+  <title>Home | It's Yeppeeee</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"/>
 </head>
 <body>
-  <div class="container">
-    <h2>Create Your Account</h2>
-    <form action="index.html" onsubmit="alert('Sign Up Successful! Redirecting to Home Page...')">
-      <input type="text" name="fullname" placeholder="Full Name" required>
-      <input type="email" name="email" placeholder="Email Address" required>
-      <input type="password" name="password" placeholder="Password" required>
-      <input type="tel" name="phone" placeholder="Phone Number" required>
-      <button type="submit">Sign Up</button>
-    </form>
-    <p>Already have an account? <a href="login.html">Login</a></p>
-  </div>
+  <header >
+    <img src="https://img.freepik.com/vector-premium/plantilla-logotipo-carrito-comida-rapida_692461-78.jpg?w=2000" alt="It's Yeppeeee">
+    <nav>
+      <a href="index.html" class="active">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="service.html">SERVICE</a>
+      <a href="menu.html">MENU</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="book.html">BOOK A TABLE</a>
+    </nav>
+  </header>
 
-  <footer>© 2025 Food Cart | All Rights Reserved</footer>
+  <section>
+    <h1>Welcome to Our Food Cart</h1>
+    <img src="food cart.png" alt="Food Cart" class="main-img">
+    <p>Delicious street food served fresh every day!</p>
+  </section>
 
+  <footer>
+    <p>Follow us on Instagram <i class="fa-brands fa-instagram"></i>
+    | Facebook<i class="fa-brands fa-facebook"></i>
+    | Call <i class="fa-solid fa-phone"></i> </p>
+  </footer>
 </body>
 </html>
