@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | It's Yeppeeee</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"/>
+    <style>
+    
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 6fr));
+      gap: 40px;
+      padding: 40px;
+    }
+
+    .menu-item {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.05);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    .menu-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .menu-content h3 {
+      font-size: 2rem;
+      margin: 10px 0 5px;
+      color: #333;
+    }
+
+    .menu-content p {
+      color: #777;
+      font-size: 2rem;
+      margin: 5px 0 10px;
+    }
+
+    .price {
+      background-color: #ff6347;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 20px;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+   
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://img.freepik.com/vector-premium/plantilla-logotipo-carrito-comida-rapida_692461-78.jpg?w=2000" alt="It's Yeppeeee">
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="service.html">SERVICE</a>
+      <a href="menu.html" class="active">MENU</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="book.html">BOOK A TABLE</a>
+    </nav>
+  </header>
+
+  <section>
+    <h1>🍕 Food Cart Menu🍴</h1>
+    <div class="menu-container">
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=999" alt="Burger">
+      <div class="menu-content">
+        <h3>Cheese Burger</h3>
+        <p>Juicy beef patty with melted cheese and crispy lettuce.</p>
+        <span class="price">₹120</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1593504049359-74330189a345?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=627" alt="Pizza">
+      <div class="menu-content">
+        <h3>Veggie Pizza</h3>
+        <p>Loaded with fresh vegetables and mozzarella cheese.</p>
+        <span class="price">₹250</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=692" alt="Pasta">
+      <div class="menu-content">
+        <h3> Pasta</h3>
+        <p>Creamy and cheesy pasta with herbs and veggies.</p>
+        <span class="price">₹180</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.poc5rXJdgIlN9xsgFdsNWQHaE-?pid=Api&P=0&h=180" alt="Paneer Chowmein">
+      <div class="menu-content">
+        <h3>Paneer Chowmein</h3>
+        <p>Delicious noodles tossed with spicy paneer and veggies.</p>
+        <span class="price">₹120</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i.ytimg.com/vi/xNcYh-NV2BQ/maxresdefault.jpg" alt="Manchurian">
+      <div class="menu-content">
+        <h3>Veg Manchurian</h3>
+        <p>Soft vegetable balls cooked in tangy Indo-Chinese sauce.</p>
+        <span class="price">₹130</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.db4_xxwMvHpKF2FjY4IxBgHaFO?pid=Api&P=0&h=180" alt="Dosa">
+      <div class="menu-content">
+        <h3>Masala Dosa</h3>
+        <p>Crispy South Indian dosa stuffed with spiced potato filling.</p>
+        <span class="price">₹100</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.Bo3iLlmmmm94JvaQxyFJxgHaEn?pid=Api&P=0&h=180" alt="Maggi">
+      <div class="menu-content">
+        <h3>Masala Maggi</h3>
+        <p>Hot and spicy Maggi noodles with chopped vegetables.</p>
+        <span class="price">₹60</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://www.happy-tummy.co.in/wp-content/uploads/2020/07/Chole-Bhature-scaled.jpg" alt="Chole Bhature">
+      <div class="menu-content">
+        <h3>Chole Bhature</h3>
+        <p>Fluffy bhature served with spicy chickpea curry.</p>
+        <span class="price">₹140</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.Y3EDemlKJMZJGC9xUqPt1gHaEn?pid=Api&P=0&h=180" alt="Pav Bhaji">
+      <div class="menu-content">
+        <h3>Pav Bhaji</h3>
+        <p>Butter-toasted pav with thick and spicy vegetable bhaji.</p>
+        <span class="price">₹120</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://1.bp.blogspot.com/-tJccNlQT5H8/XxH9-5Yo-AI/AAAAAAAANtw/gj3XnPBO_lgPxAhu00FyVX9mJj95v8sxQCNcBGAsYHQ/s2048/IMG_0563%2B%25281%2529.JPG" alt="Samosa">
+      <div class="menu-content">
+        <h3>Punjabi Samosa</h3>
+        <p>Golden fried samosas stuffed with spicy potato filling.</p>
+        <span class="price">₹25</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.91mA4Z6Vj1rxw96TnYGPggHaE6?pid=Api&P=0&h=180" alt="Tea">
+      <div class="menu-content">
+        <h3>Masala Tea</h3>
+        <p>Freshly brewed Indian tea with spices and milk.</p>
+        <span class="price">₹20</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.CtT5SgKbEBTMttUvkB-ORQHaIj?pid=Api&P=0&h=180" alt="Lassi">
+      <div class="menu-content">
+        <h3>Sweet Lassi</h3>
+        <p>Refreshing yogurt-based drink flavored with cardamom.</p>
+        <span class="price">₹50</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://www.cookwithnabeela.com/wp-content/uploads/2024/02/GulabJamun2-.webp" alt="Gulab Jamun">
+      <div class="menu-content">
+        <h3>Gulab Jamun</h3>
+        <p>Soft fried dumplings soaked in sweet sugar syrup.</p>
+        <span class="price">₹70</span>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1025" alt="Fries">
+      <div class="menu-content">
+        <h3>French Fries</h3>
+        <p>Golden crispy fries served with spicy ketchup.</p>
+        <span class="price">₹90</span>
+      </div>
+    </div>
+     <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1528736235302-52922df5c122?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1254" alt="Sandwich">
+      <div class="menu-content">
+        <h3>Grilled Sandwich</h3>
+        <p>Stuffed with cheese, tomato, and crunchy veggies.</p>
+        <span class="price">₹100</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://i0.wp.com/passion2cook.com/wp-content/uploads/2023/03/paneer-momos-2.jpg?w=1920&ssl=1" alt="Momos">
+      <div class="menu-content">
+        <h3>Steamed Momos</h3>
+        <p>Soft dumplings served with spicy red chutney.</p>
+        <span class="price">₹110</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1701579231305-d84d8af9a3fd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687" alt="Biryani">
+      <div class="menu-content">
+        <h3>Chicken Biryani</h3>
+        <p>Flavorful rice with tender chicken and aromatic spices.</p>
+        <span class="price">₹220</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="http://www.mymagicpan.com/wp-content/uploads/good0069-1.jpg" alt="Cold Coffee">
+      <div class="menu-content">
+        <h3>Cold Coffee</h3>
+        <p>Refreshing iced coffee with cream and chocolate syrup.</p>
+        <span class="price">₹80</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1560008581-09826d1de69e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=744" alt="Ice Cream">
+      <div class="menu-content">
+        <h3>Vanilla Ice Cream</h3>
+        <p>Classic scoop of vanilla topped with chocolate sauce.</p>
+        <span class="price">₹70</span>
+      </div>
+    </div>
+
+     <div class="menu-item">
+      <img src="https://images.slurrp.com/prodrich_article/1lhujrzhhm6.webp?impolicy=slurrp-20210601&width=880&height=500" alt="Special Thali">
+      <div class="menu-content">
+        <h3>Special Thali</h3>
+        <p>A royal platter with rice, roti, dal, paneer, salad, sweet and papad.</p>
+        <span class="price">₹300</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.MTkxBfdHroZKCsRxfNBSgQHaEo?pid=Api&P=0&h=180" alt="Juice">
+      <div class="menu-content">
+        <h3>Fresh Fruit Juice</h3>
+        <p>100% natural juice from seasonal fruits.</p>
+        <span class="price">₹60</span>
+      </div>
+    </div>
+  </div>
+    </div>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Follow us on Instagram <i class="fa-brands fa-instagram"></i>
+    | Facebook<i class="fa-brands fa-facebook"></i>
+    | Call <i class="fa-solid fa-phone"></i> </p>
+  </footer>
+</body>
+</html>

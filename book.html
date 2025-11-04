@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Table | It's Yeppeeee</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"/>
+</head>
+<style>
+  .booking-section {
+      max-width: 600px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .booking-section h2 {
+      text-align: center;
+      color: #ff6347;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+       font-size: 2rem;
+      font-weight: 600;
+      color: #444;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 2rem;
+      outline: none;
+      transition: border 0.3s;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #ff6347;
+    }
+
+    button {
+      background-color: #ff6347;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 8px;
+      
+    }
+
+    button:hover {
+      background-color: #e5533d;
+    }
+</style>
+<body>
+  <header>
+    <img src="https://img.freepik.com/vector-premium/plantilla-logotipo-carrito-comida-rapida_692461-78.jpg?w=2000" alt="It's Yeppeeee">
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="service.html">SERVICE</a>
+      <a href="menu.html">MENU</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="book.html" class="active">BOOK A TABLE</a>
+    </nav>
+    
+  </header>
+
+  <section>
+    <h1> Book a Table</h1>
+    <!-- Booking Form Section -->
+  <div class="booking-section">
+    <h2>Reserve Your Seat</h2>
+    <form action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="people">Number of Guests:</label>
+      <select id="people" name="people" required>
+        <option value="">Select</option>
+        <option value="1">1 Person</option>
+        <option value="2">2 People</option>
+        <option value="3">3 People</option>
+        <option value="4">4 People</option>
+        <option value="5">5 People</option>
+        <option value="6">6+ People</option>
+      </select>
+
+      <label for="message">Special Request (Optional):</label>
+      <textarea id="message" name="message" rows="4" placeholder="Any special instructions..."></textarea>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+  </section>
+
+  <footer>
+   <p>Follow us on Instagram <i class="fa-brands fa-instagram"></i>
+    | Facebook<i class="fa-brands fa-facebook"></i>
+    | Call <i class="fa-solid fa-phone"></i> </p>
+  </footer>
+</body>
+</html>

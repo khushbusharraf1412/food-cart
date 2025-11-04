@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Food Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"/>
+  <style>
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px;
+      gap: 30px;
+      max-width: 4000px;
+      margin: auto;
+    }
+
+    .contact-info,.contact-form {
+      
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 25px;
+      flex: 1;
+      min-width: 100px;
+      
+    }
+    
+
+    .contact-info h2, .contact-form h2 {
+      color: #ff6347;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .contact-info p {
+      font-size: 2rem;
+      color: #555;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    .contact-info i {
+      color: #ff6347;
+      margin-right: 8px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    input, textarea {
+      
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 2rem;
+      outline: none;
+      transition: border 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #ff6347;
+    }
+
+    button {
+      background-color: #ff6347;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      font-size: 1rem;
+      border-radius: 8px;
+     
+    }
+
+    button:hover {
+      background-color: #d2c4c4;
+    }
+
+    
+
+    
+    
+  </style>
+</head>
+<body>
+
+ <header>
+    <img src="https://img.freepik.com/vector-premium/plantilla-logotipo-carrito-comida-rapida_692461-78.jpg?w=2000" alt="It's Yeppeeee">
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="service.html">SERVICE</a>
+      <a href="menu.html">MENU</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="book.html">BOOK A TABLE</a>
+    </nav>
+    
+  </header>
+
+  
+  <!-- Contact Section -->
+  <div class="contact-container">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p><i>📍</i> <strong>Location:</strong> Near R.S. College, Muzaffarpur, Bihar</p>
+      <p><i>📞</i> <strong>Phone:</strong> +91 98765 43210</p>
+      <p><i>📧</i> <strong>Email:</strong> foodcart@gmail.com</p>
+      <p><i>🕒</i> <strong>Opening Hours:</strong> 10 AM – 10 PM (Everyday)</p>
+      <p>We’d love to serve you the best street food experience! Visit us or drop a message. 🍽️</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <input  type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject">
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>Follow us on Instagram <i class="fa-brands fa-instagram"></i>
+    | Facebook<i class="fa-brands fa-facebook"></i>
+    | Call <i class="fa-solid fa-phone"></i> </p>
+  </footer>
+
+</body>
+</html>
